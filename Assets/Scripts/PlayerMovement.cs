@@ -68,7 +68,7 @@ public class PlayerMovement : MonoBehaviour
             {
             MoveLeft();
             }
-        if (Input.GetKey(jumpKey))
+        if (Input.GetKeyDown(jumpKey))
             {
             Jump();
             }
