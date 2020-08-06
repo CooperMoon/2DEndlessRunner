@@ -13,7 +13,8 @@ public class PlayerMovement : MonoBehaviour
        defines the height at which the character will jump and ignores x axis movement
        (-jumpHeight will make you go down)
 
-
+        the Rididbody2D velocity allows to keep track of how we were moving before and while we are changing the movement
+        gives a smoother control
     */
 
     private Rigidbody2D rb2d;
@@ -34,26 +35,31 @@ public class PlayerMovement : MonoBehaviour
         rb2d = GetComponent<Rigidbody2D>();
     }
 
-    private void MoveRight()
+    private void MoveRight()//Makes a function for moving right
         {
         rb2d.velocity = new Vector2(speed, rb2d.velocity.y);
         }
 
-    private void MoveLeft()
+    private void MoveLeft()//Makes a function for moving left
         {
         rb2d.velocity = new Vector2(-speed, rb2d.velocity.y);
         }
 
-    private void Jump()
+    private void Jump()//Makes a function for jumping
         {
         rb2d.velocity = new Vector2(rb2d.velocity.x, jumpHeight);
+        }
+    private void Stop()//Makes a function for stopping the character
+        {
+        rb2d.velocity = new Vector2(0, rb2d.velocity.y);
         }
 
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(rightKey))
+        //if key pressed true call function and move player as defined in function
+        if (Input.GetKey(rightKey)) 
             {
             MoveRight();
             }
@@ -66,5 +72,11 @@ public class PlayerMovement : MonoBehaviour
             {
             Jump();
             }
+        //if neither left or right is pressed stop player
+        if (!Input.GetKey(rightKey) && !Input.GetKey(leftKey))   
+            {
+            Stop();
+            }
+        
     }
 }
