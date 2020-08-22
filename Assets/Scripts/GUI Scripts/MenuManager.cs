@@ -33,9 +33,9 @@ public class MenuManager : MonoBehaviour
     {
         Debug.Log("Controls Button Pressed");
     }
-    public void VolumeButton()
+    public void SettingsButton()
     {
-        Debug.Log("Volume Button Pressed");
+        Debug.Log("Settings Button Pressed");
     }
     public void OptionsBackButton()
     {
@@ -50,8 +50,8 @@ public class MenuManager : MonoBehaviour
     }
     #endregion
 
-    #region Volume Screen Scripts
-    public void VolumeBackButton()
+    #region Settings Screen Scripts
+    public void SettingsBackButton()
     {
         Debug.Log("Back Button Pressed");
     }

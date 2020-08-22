@@ -7,21 +7,24 @@ using UnityEngine.SceneManagement;
 
 public class Death : MonoBehaviour
 {
+    #region Variable List
     public GameObject player;
     
-    private Boolean death;
+    public static Boolean death;
+
+    //Makes a variable for the Class DeathMenu called deathMenuScript
+    public DeathMenu deathMenuScript;
+    #endregion
 
     private void Update()
     {
         if (death == true)
         {
-#if UNITY_EDITOR
-            //if player dies the editor will exit playmode / or open the death menu
-            EditorApplication.ExitPlaymode(); //Replace with gameObject.GetComponent<MyScript>().MyFunction(); to use the death menu  
-#endif
-            SceneManager.LoadScene("GameScene");
-
-            }
+            //Sets the variable called death to false;
+            death = false;
+            //Calls the method called LaunchDeathMenu from the class DeathMenu
+            deathMenuScript.LaunchDeathMenu();
+        }
     }
     private void OnTriggerEnter2D(Collider2D collision) //for is trigger collision
     {
@@ -34,4 +37,5 @@ public class Death : MonoBehaviour
         //detects if the player has made a collision and then sets death to true else stays false
         death = true;
     }
+
 }
