@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6056901254249686961}
   - component: {fileID: 6056901254249686967}
-  - component: {fileID: 6056901254249686960}
+  - component: {fileID: 418103798}
   m_Layer: 0
   m_Name: PrototypeStone (5)
   m_TagString: Untagged
@@ -71,7 +71,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c002c69ee7883e54caa9dfd05cb1e7d4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 05bd1993588ae7d4a837f8199345db77, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -82,7 +82,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &6056901254249686960
+--- !u!61 &418103798
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -99,14 +99,14 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.59, y: 6.66}
+    oldSize: {x: 6.01, y: 7.21}
     newSize: {x: 5.59, y: 6.66}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.59, y: 6.66}
+  m_Size: {x: 6.01, y: 7.21}
   m_EdgeRadius: 0
 --- !u!1 &6056901254320269199
 GameObject:
@@ -118,7 +118,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6056901254320269198}
   - component: {fileID: 6056901254320269196}
-  - component: {fileID: 6056901254320269197}
+  - component: {fileID: 1139320809}
   m_Layer: 0
   m_Name: PrototypeStone (4)
   m_TagString: Untagged
@@ -179,7 +179,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c002c69ee7883e54caa9dfd05cb1e7d4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 05bd1993588ae7d4a837f8199345db77, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -190,7 +190,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &6056901254320269197
+--- !u!61 &1139320809
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -207,14 +207,14 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.59, y: 6.66}
+    oldSize: {x: 6.01, y: 7.21}
     newSize: {x: 5.59, y: 6.66}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.59, y: 6.66}
+  m_Size: {x: 6.01, y: 7.21}
   m_EdgeRadius: 0
 --- !u!1 &6056901255050808417
 GameObject:
@@ -226,7 +226,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6056901255050808416}
   - component: {fileID: 6056901255050808422}
-  - component: {fileID: 6056901255050808423}
+  - component: {fileID: 367526052}
   m_Layer: 0
   m_Name: PrototypeStone (3)
   m_TagString: Untagged
@@ -287,7 +287,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c002c69ee7883e54caa9dfd05cb1e7d4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 05bd1993588ae7d4a837f8199345db77, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -298,7 +298,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &6056901255050808423
+--- !u!61 &367526052
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -315,14 +315,14 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.59, y: 6.66}
+    oldSize: {x: 6.01, y: 7.21}
     newSize: {x: 5.59, y: 6.66}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.59, y: 6.66}
+  m_Size: {x: 6.01, y: 7.21}
   m_EdgeRadius: 0
 --- !u!1 &6056901255459916766
 GameObject:
@@ -377,9 +377,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6056901255520235302}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -18.72, y: -6.394, z: 0}
-  m_LocalScale: {x: 1, y: 0.90480006, z: 1}
+  m_LocalScale: {x: 1, y: 0.9161101, z: 1}
   m_Children:
   - {fileID: 6056901255050808416}
   - {fileID: 6056901254320269198}
@@ -400,7 +400,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6056901255809113781}
   - component: {fileID: 6056901255809113787}
-  - component: {fileID: 6056901255809113780}
+  - component: {fileID: 606541272}
   m_Layer: 0
   m_Name: PrototypeStone (6)
   m_TagString: Untagged
@@ -461,7 +461,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c002c69ee7883e54caa9dfd05cb1e7d4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 05bd1993588ae7d4a837f8199345db77, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -472,7 +472,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &6056901255809113780
+--- !u!61 &606541272
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -489,14 +489,14 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.59, y: 6.66}
+    oldSize: {x: 6.01, y: 7.21}
     newSize: {x: 5.59, y: 6.66}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.59, y: 6.66}
+  m_Size: {x: 6.01, y: 7.21}
   m_EdgeRadius: 0
 --- !u!1 &6056901256023146712
 GameObject:
@@ -508,7 +508,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6056901256023146718}
   - component: {fileID: 6056901256023146719}
-  - component: {fileID: 6056901256023146717}
+  - component: {fileID: 1894017968}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -556,7 +556,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.385741, y: 2.909006}
   m_EdgeRadius: 0
---- !u!114 &6056901256023146717
+--- !u!114 &1894017968
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -569,3 +569,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  deathMenuScript: {fileID: 0}

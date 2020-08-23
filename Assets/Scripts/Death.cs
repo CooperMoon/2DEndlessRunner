@@ -19,13 +19,14 @@ public class Death : MonoBehaviour
     private void Update()
     {
         if (death == true)
-        {
-            //Sets the variable called death to false;
-            death = false;
-            //Calls the method called LaunchDeathMenu from the class DeathMenu
-            deathMenuScript.LaunchDeathMenu();
+            {
+                //Sets the variable called death to false;            
+                //Calls the method called LaunchDeathMenu from the class DeathMenu
+                deathMenuScript.LaunchDeathMenu();
+                
+            }
+        
         }
-    }
     private void OnTriggerEnter2D(Collider2D collision) //for is trigger collision
     {
         //detects if the player has triggered a collision and then sets death to true else stays false

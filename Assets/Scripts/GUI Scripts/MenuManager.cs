@@ -12,6 +12,7 @@ public class MenuManager : MonoBehaviour
     {
         Debug.Log("Play Button Pressed");
         SceneManager.LoadScene("GameScene");
+        Time.timeScale = 1f;
     }
     public void OptionsButton()
     {

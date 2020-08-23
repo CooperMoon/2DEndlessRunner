@@ -30,6 +30,7 @@ public class PauseMenu : MonoBehaviour
             if(isPaused)
             {
                 ResumeGame();
+                
             }
             else
             {
@@ -47,7 +48,7 @@ public class PauseMenu : MonoBehaviour
         //Sets the variable isPaused to false
         isPaused = true;
         //Locks the player's cursor in the game window
-        Cursor.lockState = CursorLockMode.Locked;
+       
     }
 
     public void ResumeGame()

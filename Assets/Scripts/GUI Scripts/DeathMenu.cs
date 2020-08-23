@@ -21,6 +21,7 @@ public class DeathMenu : MonoBehaviour
 
     public void LaunchDeathMenu()
     {
+        Death.death = false;
         Debug.Log("Death Menu Launched");
         //Sets UnityEngine time to 0
         Time.timeScale = 0f;
