@@ -31,7 +31,7 @@ public class PlayerMovement : MonoBehaviour
     //Stores each key in a string variable
     private string rightKey = "d";
     private string leftKey = "a";
-    private string jumpKey = "space";
+    //private string jumpKey = "space";
 
     // Start is called before the first frame update
     void Start()
@@ -73,7 +73,7 @@ public class PlayerMovement : MonoBehaviour
             {
             MoveLeft();
             }
-        if (Input.GetKeyDown(jumpKey))
+        if (Input.GetKeyDown(KeyBindScript.keys["Jump"]))
             {
             Jump();
             }

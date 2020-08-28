@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEditor;
 using UnityEngine.SceneManagement;
 using System;
+using UnityEngine.UI;
 
 public class DeathMenu : MonoBehaviour
 
@@ -21,8 +22,11 @@ public class DeathMenu : MonoBehaviour
 
     public void LaunchDeathMenu()
     {
+        //sets the variable death in the class Death to false
         Death.death = false;
         Debug.Log("Death Menu Launched");
+        //sets the variable showDisplay in the class Score to false | this sets the score canvas inactive
+        Score.showDisplay = false;
         //Sets UnityEngine time to 0
         Time.timeScale = 0f;
         //Sets the GameObject attached to the variable deathScreen to true
@@ -35,6 +39,8 @@ public class DeathMenu : MonoBehaviour
         Time.timeScale = 1f;
         //Sets the GameObject attached to the variable deathScreen to false
         deathScreen.SetActive(false);
+        //sets the variable showDisplay in the class Score to false | this sets the score canvas active
+        Score.showDisplay = true;
         //Loads the Scene called MainMenu
         SceneManager.LoadScene("MainMenu");
     }

@@ -16,9 +16,6 @@ public class PlayerController : MonoBehaviour
     public float playerSpeed;           //variable for inspector reference for the players speed
     public float jumpHeight;            //float for the players jump height
     public float count = 0;             //float for the jump count
-    
-
-    public string jump = "spacebar";    //variable for setting the jump input; space bar initially. 
     #endregion
 
     #region Start
@@ -65,7 +62,7 @@ public class PlayerController : MonoBehaviour
 
     private void Jump()
     {
-        if (Input.GetKeyDown(jump) && count < 1)//checks if space has been pressed and count is less then 1
+        if (Input.GetKeyDown(KeyBindScript.keys["Jump"]) && count < 1)//checks if space has been pressed and count is less then 1
         {
             //if true jump and increase count
             rb2d.velocity = new Vector2(rb2d.velocity.x, jumpHeight);

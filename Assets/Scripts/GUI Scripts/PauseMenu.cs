@@ -30,7 +30,6 @@ public class PauseMenu : MonoBehaviour
             if(isPaused)
             {
                 ResumeGame();
-                
             }
             else
             {
@@ -47,8 +46,6 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 0f;
         //Sets the variable isPaused to false
         isPaused = true;
-        //Locks the player's cursor in the game window
-       
     }
 
     public void ResumeGame()
@@ -59,8 +56,6 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1f;
         //Sets the variable isPaused to false
         isPaused = false;
-        //Unlocks the users cursor from the game window
-        Cursor.lockState = CursorLockMode.None;
     }
 
     #region PauseMenu Button Scripts
@@ -77,8 +72,6 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1f;
         //Sets the gameobject attached to the variable pauseMenu to true
         isPaused = false;
-        //Unlocks the users cursor from the game window
-        Cursor.lockState = CursorLockMode.None;
         //Loads the scene called MainMenu
         SceneManager.LoadScene("MainMenu");
     }
