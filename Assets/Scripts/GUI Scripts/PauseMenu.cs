@@ -11,6 +11,7 @@ public class PauseMenu : MonoBehaviour
     public GameObject pauseMenu;
     //Makes a public staic boolean variable called isPaused
     public static bool isPaused;
+    public DeathScriptv2 deathScript;
     #endregion
 
     // Start is called before the first frame update
@@ -23,8 +24,9 @@ public class PauseMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //If the player presses the escape key down this if statement runs
-        if (Input.GetKeyDown(KeyCode.Escape))
+        //if the player is alive and escape is pressed the game will pause
+        //this is too ensure that the player cant continue playing after dying
+        if (deathScript.death == false && Input.GetKeyDown(KeyCode.Escape))
         {
             //If the variable is paused is true then the method ResumeGame() runs, if not the the method PauseGame() runs
             if(isPaused)

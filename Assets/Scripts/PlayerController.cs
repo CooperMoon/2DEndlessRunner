@@ -43,7 +43,7 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         // calls the jump method 
-        // use update to catch a jump occurance at any time sp we do not miss any.
+        // use update to catch a jump occurance at any time so we do not miss any.
 
         //if the variable isPaused in the PauseMenu script is false then the function Jump() is called
         if (!PauseMenu.isPaused)
@@ -76,12 +76,14 @@ public class PlayerController : MonoBehaviour
     private void OnTriggerStay2D(Collider2D collision)
     {
         count = 0;//if collider is touching another collider or rigidbody count goes to 0
+        Debug.Log("Can Jump");
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
         // prevent jumping when not on a platform, e.g. fallen off.
-        count = 1;//if collider is not touching another collider or rigidbody count goes to 1     
-    }
+        count = 1;//if collider is not touching another collider or rigidbody count goes to 1
+        Debug.Log("Can't Jump");
+    }   
     #endregion
 }
