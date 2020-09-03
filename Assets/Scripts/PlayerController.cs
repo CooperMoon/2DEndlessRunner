@@ -62,7 +62,7 @@ public class PlayerController : MonoBehaviour
 
     private void Jump()
     {
-        if (Input.GetKeyDown(KeyBindScript.keys["Jump"]) && count < 1)//checks if space has been pressed and count is less then 1
+        if (Input.GetKeyDown(KeyCode.Space) && count < 1)//checks if space has been pressed and count is less then 1
         {
             //if true jump and increase count
             rb2d.velocity = new Vector2(rb2d.velocity.x, jumpHeight);

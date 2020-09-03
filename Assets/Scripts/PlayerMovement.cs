@@ -73,7 +73,7 @@ public class PlayerMovement : MonoBehaviour
             {
             MoveLeft();
             }
-        if (Input.GetKeyDown(KeyBindScript.keys["Jump"]))
+        if (Input.GetKeyDown(KeyCode.Space))
             {
             Jump();
             }
