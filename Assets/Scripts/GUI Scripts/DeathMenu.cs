@@ -16,7 +16,7 @@ public class DeathMenu : MonoBehaviour
 
     public void Start()
     {
-        //Sets the GameObject attached to the variable deathScreen to false
+        //Sets the GameObject (Death Screen) attached to the variable deathScreen to false
         deathScreen.SetActive(false);
     }
 
@@ -25,8 +25,8 @@ public class DeathMenu : MonoBehaviour
         //sets the variable death in the class Death to false
         Death.death = false;
         Debug.Log("Death Menu Launched");
-        //sets the variable showDisplay in the class Score to false | this sets the score canvas inactive
-        Score.showDisplay = false;
+        //sets the variable showDisplay in the class Score to false (this sets the score canvas inactive)
+        ScoreManager.showDisplay = false;
         //Sets UnityEngine time to 0
         Time.timeScale = 0f;
         //Sets the GameObject attached to the variable deathScreen to true
@@ -37,17 +37,17 @@ public class DeathMenu : MonoBehaviour
     {
         //Sets UnityEngine time to 1
         Time.timeScale = 1f;
-        //Sets the GameObject attached to the variable deathScreen to false
+        //Sets the GameObject attached to the variable deathScreen to false 
         deathScreen.SetActive(false);
-        //sets the variable showDisplay in the class Score to false | this sets the score canvas active
-        Score.showDisplay = true;
-        //Loads the Scene called MainMenu
+        //sets the variable showDisplay in the class Score to false (this sets the score canvas active)
+        ScoreManager.showDisplay = true;
+        //Loads the scene called "MainMenu"
         SceneManager.LoadScene("MainMenu");
     }
 
     public void QuitButton()
     {
-        //If in the Unity Editor exit playmode, if not quit application
+        //If this method is run while in the Unity Editor, exit playmode. If else quit this application
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.ExitPlaymode();
 #endif

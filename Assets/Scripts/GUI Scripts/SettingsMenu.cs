@@ -10,9 +10,9 @@ public class SettingsMenu : MonoBehaviour
     public Dropdown resolution;
     #endregion
 
-    // Start is called before the first frame update
     void Start()
     {
+        // assigns resolution display information to the array resolutions
         resolutions = Screen.resolutions;
         resolution.ClearOptions();
         List<string> options = new List<string>();

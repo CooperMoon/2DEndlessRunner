@@ -16,6 +16,7 @@ public class MenuManager : MonoBehaviour
     public void PlayButton()
     {
         Debug.Log("Play Button Pressed");
+        // Loads the scene called "GameScene" upon this method being called.
         SceneManager.LoadScene("GameScene");
     }
     public void OptionsButton()
@@ -25,7 +26,7 @@ public class MenuManager : MonoBehaviour
     public void MainMenuQuitButton()
     {
         Debug.Log("Quit Button Pressed");
-
+        //If this method is run while in the Unity Editor, exit playmode. If else quit this application
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.ExitPlaymode();
 #endif
@@ -75,11 +76,13 @@ public class MenuManager : MonoBehaviour
 
     public void SetMusicVolume(float value)
     {
+        //gives the AudioMixer a exposed variable to change "MusicVol" and a value parameter.
         mixer.SetFloat("MusicVol", value);
     }
 
     public void SetSEVolume(float value)
     {
+        //gives the AudioMixer a exposed variable to change "SEVol" and a value parameter.
         mixer.SetFloat("SEVol", value);
     }
     #endregion
@@ -91,12 +94,12 @@ public class MenuManager : MonoBehaviour
 
     public void LoadPlayerPrefs()
     {
-        //load music slider
+        //loads music slider & mixer values
         float musicVol = PlayerPrefs.GetFloat("MusicVol");
         musicSlider.value = musicVol;
         mixer.SetFloat("MusicVol", musicVol);
 
-        //save sound effects slider
+        //loads sound effects slider & mixer values
         float seVol = PlayerPrefs.GetFloat("SEVol");
         seSlider.value = seVol;
         mixer.SetFloat("SEVol", seVol);
@@ -105,19 +108,20 @@ public class MenuManager : MonoBehaviour
 
     public void SavePlayerPrefs()
     {
-        //save music slider
+        //save music slider & mixer values as PlayerPrefs
         float musicVol;
         if(mixer.GetFloat("MusicVol", out musicVol))
         {
             PlayerPrefs.SetFloat("MusicVol", musicVol);
         }
-        //save sound effects slider
+        //save sound effects slider & mixer values as PlayerPrefs
         float seVol;
         if (mixer.GetFloat("SEVol", out seVol))
         {
             PlayerPrefs.SetFloat("SEVol", seVol);
         }
 
+        //updates PlayerPrefs
         PlayerPrefs.Save();
     }
 
